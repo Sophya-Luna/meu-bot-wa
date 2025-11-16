@@ -7,7 +7,7 @@ const app = express().use(bodyParser.json());
 
 // --- CONFIGURE AQUI ---
 // Coloque o Token de Acesso (temporário ou permanente) que o Facebook te deu
-const WHATSAPP_TOKEN = 'EAAcFEZAozGeMBPyWH9mN7fdNEWLLSQYwS8Lq2PUBdKUDfrSvW3nUbodZB44E87aLB38qc5ttAYZBHBTdSt0YcRtXimL1JyrfBXP3DbWMMoYuGlrmQT7O1LaQZAVjassNye2ijrfZAUwSkLODP131Kj8AQHWc5hgR7KbZA3Yd5LHGMDibSyz40mEkmjTZAZBzGsZB3t6cvl4fSqn4KbagMvLt4ydyBc6QFt0dvZCoLRDj2z942ZBaG6BZCKK1tTbpfvEQ7HxKuWxwfI4VIEUw5x4BMOr4A6Cn';
+const WHATSAPP_TOKEN = 'EAAcFEZAozGeMBP4zRxZBEvaqtIoZCBauj7rSbBZAxZBPZBZBegEJrgn7W7VZAQI84cqZAzHKI4cqeg0v3RmasxH5XdgAunMIMV2RMYWm2ZBtGfb65T81ofZCnmZBBkZCWrNm8zZAP6HrQitQ4PtZCl2Y2kpYHX8AZBGyGeZBRlOqifjEeMI2ZChWDpORM3EXZAbcvATx398r9yxtSvJGafFUgqUqG7MpvLQpMTnVwEmbkuZAJZCqZC5rmJg1wjJAZDZD';
 // Coloque o ID do seu número de telefone (que o Facebook te deu)
 const WHATSAPP_PHONE_ID = '797715193434137';
 // Crie qualquer senha, será usada no Passo 4
@@ -83,4 +83,5 @@ app.get('/webhook', (req, res) => {
       res.sendStatus(403);
     }
   }
+
 });
